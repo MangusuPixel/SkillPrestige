@@ -15,11 +15,12 @@ public class SpaceCoreSkill : ISpaceCoreSkillMod
     public IEnumerable<Skill> AdditionalSkills {
         get
         {
+            var skillIcon = Skills.GetSkillIcon(this.SpaceCoreSkillId);
             yield return new Skill
             {
                 Type = this.SkillType,
-                SourceRectangleForSkillIcon = new Rectangle(0, 0, 16, 16),
-                SkillIconTexture = Skills.GetSkillIcon(this.SpaceCoreSkillId),
+                SourceRectangleForSkillIcon = new Rectangle(0, 0, skillIcon.Width, skillIcon.Height),
+                SkillIconTexture = skillIcon,
                 Professions = this.GetAddedProfessions(),
                 GetSkillLevel = () => Skills.GetSkillLevel(Game1.player, this.SpaceCoreSkillId),
                 SetSkillLevel = _ => { }, //is not set independently of the experience.
