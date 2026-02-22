@@ -10,7 +10,7 @@
   "UniqueID": "Milli2306.SocializingPrestigeAdapter",
   "Name": "SkillPrestige.Socializing",
   "Author": "Milli2306",
-  "Version": "1.0.0-Debug",
+  "Version": "1.0.0",
   "Description": "Extends Skill Prestige to support the Socializing Skill",
   "MinimumApiVersion": "4.0.0",
   "EntryDll": "SkillPrestige.Socializing.dll",

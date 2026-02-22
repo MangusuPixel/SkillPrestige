@@ -10,7 +10,7 @@
   "UniqueID": "Milli2306.SnSPrestigeAdapterWitchcraft",
   "Name": "SkillPrestige.SnSWitchcraft",
   "Author": "Milli2306",
-  "Version": "1.0.0-Debug",
+  "Version": "1.0.0",
   "Description": "Extends Skill Prestige to support the Witchcraft Skill from SnS",
   "MinimumApiVersion": "4.0.0",
   "EntryDll": "SkillPrestige.SnSWitchcraft.dll",

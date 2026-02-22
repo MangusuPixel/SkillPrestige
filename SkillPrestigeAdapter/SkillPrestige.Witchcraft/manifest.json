@@ -10,7 +10,7 @@
   "UniqueID": "Milli2306.WizardryPrestigeAdapter",
   "Name": "SkillPrestige.Wizardry",
   "Author": "Milli2306",
-  "Version": "1.0.0-Debug",
+  "Version": "1.0.0",
   "Description": "Extends Skill Prestige to support the Wizardry Skill from Ars Venifici",
   "MinimumApiVersion": "4.0.0",
   "EntryDll": "SkillPrestige.Wizardry.dll",
