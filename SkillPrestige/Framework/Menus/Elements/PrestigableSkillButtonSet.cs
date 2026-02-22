@@ -63,8 +63,8 @@ namespace SkillPrestige.Framework.Menus.Elements;
 
             private void LoadElements()
             {
-                this.IconWidth = this.Skill.SourceRectangleForSkillIcon.Width * Game1.pixelZoom;
-                this.IconHeight = this.Skill.SourceRectangleForSkillIcon.Height * Game1.pixelZoom;
+                this.IconWidth = 16 * Game1.pixelZoom;
+                this.IconHeight = 16 * Game1.pixelZoom;
                 var skillNameSize = Game1.smallFont.MeasureString(this.Skill.Type.Name);
                 this.ExperienceBarSize = new Point(this.ExperienceBarLength, this.IconHeight - (int)skillNameSize.Y - this.PaddingBetweenSkillNameAndExperienceBar);
                 int expNeeded = PerSaveOptions.Instance.PainlessPrestigeMode
@@ -125,7 +125,8 @@ namespace SkillPrestige.Framework.Menus.Elements;
             public void Draw(SpriteBatch spriteBatch)
             {
                 if (!this.ShouldBeDrawn) return;
-                Utility.drawWithShadow(spriteBatch, this.Skill.SkillIconTexture, this.DrawLocation, this.Skill.SourceRectangleForSkillIcon, Color.White, 0.0f, Vector2.Zero, Game1.pixelZoom, false, 0.88f);
+                float normalizedScale = 16f / this.Skill.SourceRectangleForSkillIcon.Height;
+                Utility.drawWithShadow(spriteBatch, this.Skill.SkillIconTexture, this.DrawLocation, this.Skill.SourceRectangleForSkillIcon, Color.White, 0.0f, Vector2.Zero, Game1.pixelZoom * normalizedScale, false, 0.88f);
                 spriteBatch.DrawString(Game1.smallFont, this.Skill.Type.Name, this.SkillNameDrawLocation, Game1.textColor);
                 this.ExperienceBar.Draw(spriteBatch);
                 //NumberSprite.draw(this.PrestigePoints, spriteBatch, this.PrestigePointDisplayLocation, Color.White, 1f, .85f, 1f, 0);
