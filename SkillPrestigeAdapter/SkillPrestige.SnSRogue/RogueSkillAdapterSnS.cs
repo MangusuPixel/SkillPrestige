@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using SkillPrestige.Mods;
 using SkillPrestige.Professions;
 using SkillPrestige.SkillTypes;
@@ -23,7 +23,7 @@ namespace SkillPrestige.SnSRogue
         public string SpaceCoreSkillId => "DestyNova.SwordAndSorcery.Rogue";
 
         /// <summary>The name to display for the mod in the log.</summary>
-        public string DisplayName { get; } = "Rogue Skill of SnS";
+        public string DisplayName { get; } = "Artificer Skill of SnS";
 
         /// <summary>Whether the mod is found in SMAPI.</summary>
         public bool IsFound { get; private set; }
@@ -38,7 +38,7 @@ namespace SkillPrestige.SnSRogue
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
         public override void Entry(IModHelper helper)
         {
-            this.SkillType = new SkillType("Rogue", 10)
+            this.SkillType = new SkillType("Artificer", 10)
             {
                 SpaceCoreSkillId = this.SpaceCoreSkillId
             };
@@ -56,7 +56,7 @@ namespace SkillPrestige.SnSRogue
             yield return new Skill
             {
                 Type = this.SkillType,
-                SourceRectangleForSkillIcon = new Microsoft.Xna.Framework.Rectangle(0, 0, 16, 16),
+                SourceRectangleForSkillIcon = new Microsoft.Xna.Framework.Rectangle(0, 0, 10, 10),
                 SkillIconTexture = Skills.GetSkillIcon(this.SpaceCoreSkillId),
                 Professions = this.GetAddedProfessions(),
                 GetSkillLevel = () => Skills.GetSkillLevel(Game1.player, this.SpaceCoreSkillId),

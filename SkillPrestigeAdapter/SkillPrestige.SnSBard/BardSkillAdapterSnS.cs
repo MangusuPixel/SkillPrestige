@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using SkillPrestige.Mods;
 using SkillPrestige.Professions;
 using SkillPrestige.SkillTypes;
@@ -55,7 +55,7 @@ namespace SkillPrestige.SnSBard
             yield return new Skill
             {
                 Type = this.SkillType,
-                SourceRectangleForSkillIcon = new Microsoft.Xna.Framework.Rectangle(0, 0, 16, 16),
+                SourceRectangleForSkillIcon = new Microsoft.Xna.Framework.Rectangle(0, 0, 10, 10),
                 SkillIconTexture = Skills.GetSkillIcon(this.SpaceCoreSkillId),
                 Professions = this.GetAddedProfessions(),
                 GetSkillLevel = () => Skills.GetSkillLevel(Game1.player, this.SpaceCoreSkillId),
