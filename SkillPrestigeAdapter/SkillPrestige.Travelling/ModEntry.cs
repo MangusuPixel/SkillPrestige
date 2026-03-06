@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using SkillPrestige.Mods;
 using SkillPrestige.Professions;
 using SkillPrestige.SkillTypes;
@@ -38,7 +38,7 @@ namespace SkillPrestige.travelling
             /// <param name="helper">Provides simplified APIs for writing mods.</param>
             public override void Entry(IModHelper helper)
             {
-                this.SkillType = new SkillType("Travell", 8)
+                this.SkillType = new SkillType("Travelling", 8)
                 {
                     SpaceCoreSkillId = this.SpaceCoreSkillId
                 };
