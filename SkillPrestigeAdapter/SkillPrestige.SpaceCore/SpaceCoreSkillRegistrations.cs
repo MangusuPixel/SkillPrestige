@@ -14,35 +14,35 @@ public class SpaceCoreSkillRegistrations
         new SpookySkill(),
     };
 }
-    internal class LuckSkill : SpaceCoreSkill
-    {
-        public LuckSkill() : base("moonslime.Luck", "moonslime.LuckSkill", "Luck Skill", "Luck", 5) {}
-    }
-    internal class CookingSkill : SpaceCoreSkill
-    {
-        public CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Yet Another Cooking Skill", "Cooking", 6) {}
-    }
-    internal class BinningSkill : SpaceCoreSkill
-    {
-        public BinningSkill() : base("drbirbdev.Binning", "drbirbdev.BinningSkill", "Binning Skill", "Binning", 7) {}
-    }
-    internal class SocializingSkill : SpaceCoreSkill
-    {
-        public SocializingSkill() :  base("drbirbdev.Socializing", "drbirbdev.SocializingSkill", "Socializing Skill", "Socializing", 8) {}
-    }
-    internal class SlimingSkill : SpaceCoreSkill
-    {
-        public SlimingSkill() : base("drbirbdev.Sliming", "drbirbdev.SlimingSkill", "Sliming Skill", "Sliming", 9)  {}
-    }
-    internal class TravellingSkill : SpaceCoreSkill
-    {
-        public TravellingSkill() : base("Achtuur.Travelling", "Achtuur.StardewTravelSkill", "Stardew Travel Skill", "Travelling", 10) {}
-    }
-    internal class ArchaeologySkill : SpaceCoreSkill
-    {
-        public ArchaeologySkill() : base("moonslime.Archaeology", "moonslime.ArchaeologySkill", "Archaeology Skill", "Archaeology", 11) {}
-    }
-    internal class SpookySkill : SpaceCoreSkill
-    {
-        public SpookySkill() : base("moonslime.Spooky", "moonslime.SpookySkill", "Scaring/Thieving Skill", "Scaring", 12) {}
-    }
+internal class LuckSkill : SpaceCoreSkill
+{
+    public LuckSkill() : base("moonslime.Luck", "moonslime.LuckSkill", "Luck Skill", "Luck", 5) { }
+}
+internal class CookingSkill : SpaceCoreSkill
+{
+    public CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Yet Another Cooking Skill", "Cooking", 6) { }
+}
+internal class BinningSkill : SpaceCoreSkill
+{
+    public BinningSkill() : base("drbirbdev.Binning", "drbirbdev.BinningSkill", "Binning Skill", "Binning", 7) { }
+}
+internal class SocializingSkill : SpaceCoreSkill
+{
+    public SocializingSkill() : base("drbirbdev.Socializing", "drbirbdev.SocializingSkill", "Socializing Skill", "Socializing", 8) { }
+}
+internal class SlimingSkill : SpaceCoreSkill
+{
+    public SlimingSkill() : base("drbirbdev.Sliming", "drbirbdev.SlimingSkill", "Sliming Skill", "Sliming", 9) { }
+}
+internal class TravellingSkill : SpaceCoreSkill
+{
+    public TravellingSkill() : base("Achtuur.Travelling", "Achtuur.StardewTravelSkill", "Stardew Travel Skill", "Travelling", 10) { }
+}
+internal class ArchaeologySkill : SpaceCoreSkill
+{
+    public ArchaeologySkill() : base("moonslime.Archaeology", "moonslime.ArchaeologySkill", "Archaeology Skill", "Archaeology", 11) { }
+}
+internal class SpookySkill : SpaceCoreSkill
+{
+    public SpookySkill() : base("moonslime.Spooky", "moonslime.SpookySkill", "Scaring/Thieving Skill", "Scaring", 12) { }
+}
