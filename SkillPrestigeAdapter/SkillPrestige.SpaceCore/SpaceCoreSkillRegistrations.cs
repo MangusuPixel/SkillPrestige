@@ -5,28 +5,31 @@ public class SpaceCoreSkillRegistrations
     public static List<SpaceCoreSkill> AllSkillsRegistered => new List<SpaceCoreSkill>
     {
         new LuckSkill(),
-        new CookingSkill(),
+        new YetAnother_CookingSkill(),
         new BinningSkill(),
         new SocializingSkill(),
         new SlimingSkill(),
         new TravellingSkill(),
         new ArchaeologySkill(),
         new SpookySkill(),
-        new WizardrySkill(),
+        new ArsVenefici_WizardrySkill(),
         new RogueSkill(),
         new BardSkill(),
         new DruidSkill(),
         new PaladinSkill(),
         new WitchcraftSkill(),
+        new SewingSkill(),
+        new WizardrySkill(),
+        new Blue_CookingSkill(),
     };
 }
 internal class LuckSkill : SpaceCoreSkill
 {
     public LuckSkill() : base("moonslime.Luck", "moonslime.LuckSkill", "Luck Skill", "Luck", 5) { }
 }
-internal class CookingSkill : SpaceCoreSkill
+internal class YetAnother_CookingSkill : SpaceCoreSkill
 {
-    public CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Yet Another Cooking Skill", "Cooking", 6) { }
+    public YetAnother_CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Cooking Skill [Moon]", "Cooking", 6) { }
 }
 internal class BinningSkill : SpaceCoreSkill
 {
@@ -52,9 +55,9 @@ internal class SpookySkill : SpaceCoreSkill
 {
     public SpookySkill() : base("moonslime.Spooky", "moonslime.SpookySkill", "Scaring/Thieving Skill", "Scaring", 12) { }
 }
-internal class WizardrySkill : SpaceCoreSkill
+internal class ArsVenefici_WizardrySkill : SpaceCoreSkill
 {
-    public WizardrySkill() : base("HeyImAmethyst.Wizardry", "HeyImAmethyst.ArsVenefici", "Wizardry Skill from Ars Venifici", "Wizardry", 13) { }
+    public ArsVenefici_WizardrySkill() : base("HeyImAmethyst.Wizardry", "HeyImAmethyst.ArsVenefici", "Wizardry Skill [Amethyst]", "Wizardry", 13) { }
 }
 internal class RogueSkill : SpaceCoreSkill
 {
@@ -75,4 +78,16 @@ internal class PaladinSkill : SpaceCoreSkill
 internal class WitchcraftSkill : SpaceCoreSkill
 {
     public WitchcraftSkill() : base("DestyNova.SwordAndSorcery.Witchcraft", "KCC.SnS", "Witchcraft Skill of SnS", "Witchcraft", 18) { }
+}
+internal class SewingSkill : SpaceCoreSkill
+{
+    public SewingSkill() : base("selph.TextileExpansionCode_TextileSkill", "selph.TextileExpansionCode", "Sewing Skill", "Sewing", 19) { }
+}
+internal class WizardrySkill : SpaceCoreSkill
+{
+    public WizardrySkill() : base("moonslime.Wizard", "moonslime.WizardrySkill", "Wizardry Skill", "Wizardry Skill [Moon]", 20) { }
+}
+internal class Blue_CookingSkill : SpaceCoreSkill
+{
+    public Blue_CookingSkill() : base("blueberry.LoveOfCooking.CookingSkill", "blueberry.LoveOfCooking", "Cooking Skill [Blue]", "", 21) { }
 }
