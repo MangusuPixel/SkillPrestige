@@ -28,7 +28,7 @@ internal class LuckSkill : SpaceCoreSkill
 }
 internal class YetAnother_CookingSkill : SpaceCoreSkill
 {
-    public YetAnother_CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Cooking Skill [Moon]", "Cooking", 6) { }
+    public YetAnother_CookingSkill() : base("moonslime.Cooking", "moonslime.CookingSkill", "Cooking Skill [Moon]", "Cooking [Moonslime]", 6) { }
 }
 internal class BinningSkill : SpaceCoreSkill
 {
@@ -52,7 +52,7 @@ internal class SpookySkill : SpaceCoreSkill
 }
 internal class ArsVenefici_WizardrySkill : SpaceCoreSkill
 {
-    public ArsVenefici_WizardrySkill() : base("HeyImAmethyst.Wizardry", "HeyImAmethyst.ArsVenefici", "Wizardry Skill [Amethyst]", "Wizardry", 13) { }
+    public ArsVenefici_WizardrySkill() : base("HeyImAmethyst.Wizardry", "HeyImAmethyst.ArsVenefici", "Wizardry Skill [Amethyst]", "Wizardry [Ars Venefici]", 13) { }
 }
 internal class RogueSkill : SpaceCoreSkill
 {
@@ -80,9 +80,9 @@ internal class SewingSkill : SpaceCoreSkill
 }
 internal class WizardrySkill : SpaceCoreSkill
 {
-    public WizardrySkill() : base("moonslime.Wizard", "moonslime.WizardrySkill", "Wizardry Skill", "Wizardry Skill [Moon]", 20) { }
+    public WizardrySkill() : base("moonslime.Wizard", "moonslime.WizardrySkill", "Wizardry Skill [Moon]", "Wizardry [Moonslime]", 20) { }
 }
 internal class Blue_CookingSkill : SpaceCoreSkill
 {
-    public Blue_CookingSkill() : base("blueberry.LoveOfCooking.CookingSkill", "blueberry.LoveOfCooking", "Cooking Skill [Blue]", "", 21) { }
+    public Blue_CookingSkill() : base("blueberry.LoveOfCooking.CookingSkill", "blueberry.LoveOfCooking", "Cooking Skill [Blue]", "Cooking [Blue]", 21) { }
 }
