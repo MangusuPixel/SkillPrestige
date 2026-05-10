@@ -5,7 +5,7 @@ using SkillPrestige.SkillTypes;
 using SpaceCore;
 using StardewValley;
 
-namespace SkillPrestige.SpaceCore;
+namespace SkillPrestige.SpaceCoreAdapters;
 
 public class SpaceCoreSkill : ISpaceCoreSkillMod
 {

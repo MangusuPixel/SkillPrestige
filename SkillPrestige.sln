@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillPrestige", "SkillPrest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{A8401C62-2051-4C3C-B97B-5281EBB04753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPrestige.SpaceCore", "SkillPrestigeAdapter\SkillPrestige.SpaceCore\SkillPrestige.SpaceCore.csproj", "{0BA88319-3112-4233-921A-8CAB62A4AFA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPrestige.SpaceCoreAdapters", "SkillPrestige.SpaceCoreAdapters\SkillPrestige.SpaceCoreAdapters.csproj", "{0BA88319-3112-4233-921A-8CAB62A4AFA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

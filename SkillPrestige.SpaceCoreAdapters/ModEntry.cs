@@ -1,7 +1,7 @@
 using SkillPrestige.Mods;
 using StardewModdingAPI;
 
-namespace SkillPrestige.SpaceCore;
+namespace SkillPrestige.SpaceCoreAdapters;
 
 public class ModEntry : Mod
 {

@@ -4,7 +4,7 @@
     "Version": "1.4.2",
     "Description": "Extends Skill Prestige to support SpaceCore skill mods.",
     "UniqueID": "CinderGarde.SpaceCoreSkillAdapter",
-    "EntryDll": "SkillPrestige.SpaceCore.dll",
+    "EntryDll": "SkillPrestige.SpaceCoreAdapters.dll",
     "MinimumApiVersion": "4.0.0",
     "Dependencies": [
         {

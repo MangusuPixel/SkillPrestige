@@ -1,4 +1,4 @@
-namespace SkillPrestige.SpaceCore;
+namespace SkillPrestige.SpaceCoreAdapters;
 
 public class SpaceCoreSkillRegistrations
 {
