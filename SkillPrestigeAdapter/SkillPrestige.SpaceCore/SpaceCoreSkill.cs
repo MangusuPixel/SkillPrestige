@@ -42,10 +42,12 @@ public class SpaceCoreSkill : ISpaceCoreSkillMod
 
     public bool IsFound { get; }
     public string SpaceCoreSkillId { get; }
+    public string UniqueModId { get; }
 
-    public SpaceCoreSkill(string spaceCoreSkillId, string displayName, string skillTypeName, int skillOrdinal)
+    public SpaceCoreSkill(string spaceCoreSkillId, string uniqueModId, string displayName, string skillTypeName, int skillOrdinal)
     {
         this.SpaceCoreSkillId = spaceCoreSkillId;
+        this.UniqueModId = uniqueModId;
         this.DisplayName = displayName;
         this.SkillType = new SkillType(skillTypeName, skillOrdinal);
         this.IsFound = true;
