@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
@@ -11,11 +11,11 @@
     <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SkillPrestige\SkillPrestige.csproj" />
+    <ProjectReference Include="..\SkillPrestige\SkillPrestige.csproj" Private="False" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="SpaceCore" HintPath="$(GameModsPath)\SpaceCore\SpaceCore.dll" />
+    <Reference Include="SpaceCore" HintPath="$(GameModsPath)\SpaceCore\SpaceCore.dll" Private="False" />
   </ItemGroup>
 
 </Project>
