@@ -8,7 +8,6 @@ public class SpaceCoreSkillRegistrations
         new YetAnother_CookingSkill(),
         new BinningSkill(),
         new SocializingSkill(),
-        new SlimingSkill(),
         new TravellingSkill(),
         new ArchaeologySkill(),
         new SpookySkill(),
@@ -38,10 +37,6 @@ internal class BinningSkill : SpaceCoreSkill
 internal class SocializingSkill : SpaceCoreSkill
 {
     public SocializingSkill() : base("drbirbdev.Socializing", "drbirbdev.SocializingSkill", "Socializing Skill", "Socializing", 8) { }
-}
-internal class SlimingSkill : SpaceCoreSkill
-{
-    public SlimingSkill() : base("drbirbdev.Sliming", "drbirbdev.SlimingSkill", "Sliming Skill", "Sliming", 9) { }
 }
 internal class TravellingSkill : SpaceCoreSkill
 {
