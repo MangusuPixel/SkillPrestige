@@ -12,6 +12,12 @@ public class SpaceCoreSkillRegistrations
         new TravellingSkill(),
         new ArchaeologySkill(),
         new SpookySkill(),
+        new WizardrySkill(),
+        new RogueSkill(),
+        new BardSkill(),
+        new DruidSkill(),
+        new PaladinSkill(),
+        new WitchcraftSkill(),
     };
 }
 internal class LuckSkill : SpaceCoreSkill
@@ -45,4 +51,28 @@ internal class ArchaeologySkill : SpaceCoreSkill
 internal class SpookySkill : SpaceCoreSkill
 {
     public SpookySkill() : base("moonslime.Spooky", "moonslime.SpookySkill", "Scaring/Thieving Skill", "Scaring", 12) { }
+}
+internal class WizardrySkill : SpaceCoreSkill
+{
+    public WizardrySkill() : base("HeyImAmethyst.Wizardry", "HeyImAmethyst.ArsVenefici", "Wizardry Skill from Ars Venifici", "Wizardry", 13) { }
+}
+internal class RogueSkill : SpaceCoreSkill
+{
+    public RogueSkill() : base("DestyNova.SwordAndSorcery.Rogue", "KCC.SnS", "Artificer Skill of SnS", "Artificer", 14) { }
+}
+internal class BardSkill : SpaceCoreSkill
+{
+    public BardSkill() : base("DestyNova.SwordAndSorcery.Bardics", "KCC.SnS", "Bard Skill of SnS", "Bard", 15) { }
+}
+internal class DruidSkill : SpaceCoreSkill
+{
+    public DruidSkill() : base("DestyNova.SwordAndSorcery.Druidics", "KCC.SnS", "Druid Skill of SnS", "Druid", 16) { }
+}
+internal class PaladinSkill : SpaceCoreSkill
+{
+    public PaladinSkill() : base("DestyNova.SwordAndSorcery.Paladin", "KCC.SnS", "Paladin Skill of SnS", "Paladin", 17) { }
+}
+internal class WitchcraftSkill : SpaceCoreSkill
+{
+    public WitchcraftSkill() : base("DestyNova.SwordAndSorcery.Witchcraft", "KCC.SnS", "Witchcraft Skill of SnS", "Witchcraft", 18) { }
 }
