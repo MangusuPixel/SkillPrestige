@@ -48,7 +48,7 @@ namespace SkillPrestige
         public bool NewLevelForSkillExists()
         {
             return Game1.player.newLevels.Any(point => point.X == this.Type.Ordinal && point.Y > 0)
-                   || typeof(Skills).GetStaticField<List<KeyValuePair<string, int>>>("NewLevels").Any(x => x.Key == this.Type.SpaceCoreSkillId);
+                   || typeof(Skills).GetStaticProperty<List<KeyValuePair<string, int>>>("NewLevels").Any(x => x.Key == this.Type.SpaceCoreSkillId);
         }
 
         /// <summary>The default skills available in the unmodded game.</summary>
