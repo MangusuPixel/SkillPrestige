@@ -18,7 +18,6 @@ public class SpaceCoreSkillRegistrations
         new PaladinSkill(),
         new WitchcraftSkill(),
         new SewingSkill(),
-        new WizardrySkill(),
         new Blue_CookingSkill(),
     };
 }
@@ -77,10 +76,6 @@ internal class WitchcraftSkill : SpaceCoreSkill
 internal class SewingSkill : SpaceCoreSkill
 {
     public SewingSkill() : base("selph.TextileExpansionCode_TextileSkill", "selph.TextileExpansionCode", "Sewing Skill", "Sewing", 19) { }
-}
-internal class WizardrySkill : SpaceCoreSkill
-{
-    public WizardrySkill() : base("moonslime.Wizard", "moonslime.WizardrySkill", "Wizardry Skill [Moon]", "Wizardry [Moonslime]", 20) { }
 }
 internal class Blue_CookingSkill : SpaceCoreSkill
 {
