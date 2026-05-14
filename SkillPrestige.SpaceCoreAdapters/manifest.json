@@ -1,7 +1,7 @@
 {
     "Name": "Skill Prestige for all SpaceCore skill mods",
     "Author": "CinderGarde",
-    "Version": "1.4.3-unofficial.3-fenixara",
+    "Version": "1.0.1",
     "Description": "Extends Skill Prestige to support SpaceCore skill mods.",
     "UniqueID": "CinderGarde.SpaceCoreSkillAdapter",
     "EntryDll": "SkillPrestige.SpaceCoreAdapters.dll",
@@ -14,5 +14,5 @@
             "UniqueID": "spacechase0.SpaceCore"
         }
     ],
-    "UpdateKeys": [ "Nexus:30635" ]
+    "UpdateKeys": [ "Nexus:30635@SpaceCoreAdapters" ]
 }
