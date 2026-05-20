@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.4.4-unofficial.4-fenixara</Version>
+    <Version>1.4.4-unofficial.5-fenixara</Version>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
