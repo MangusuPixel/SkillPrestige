@@ -15,6 +15,7 @@ public class SpaceCoreTierOneProfession : TierOneProfession
         this.EffectText = new List<string> { spaceCoreProfession.GetDescription() };
         this.Id = spaceCoreProfession.GetVanillaId();
         this.Texture = spaceCoreProfession.Icon;
+        this.SpecialHandling = new SpaceCoreProfessionHandling(spaceCoreProfession);
     }
 
     public sealed override Texture2D Texture { get; set; }
