@@ -162,8 +162,10 @@ namespace SkillPrestige.Menus
                 {
                     Logger.LogInformation("Level Up Menu - One level 5 prestiged profession found, automatically selecting the other.");
                     var professionToAdd = professionsToChooseFrom.First(x => !prestigedProfessionsForThisSkillAndLevel.Contains(x));
-                    Game1.player.professions.Add(professionToAdd.Id);
-                    professionToAdd.SpecialHandling?.ApplyEffect();
+                    if (Game1.player.professions.Add(professionToAdd.Id))
+                    {
+                        professionToAdd.SpecialHandling?.ApplyEffect();
+                    }
                     this.exitThisMenu(false);
                     RemoveLevelFromLevelList(this.CurrentSkill.Type.Ordinal, this.CurrentLevel);
                     Game1.activeClickableMenu = new LevelUpMessageDialogWithProfession(this.MessageDialogBounds, $"You levelled your {this.CurrentSkill.Type.Name} skill to level {this.CurrentLevel} and gained a profession!", this.CurrentSkill, professionToAdd);
@@ -203,8 +205,10 @@ namespace SkillPrestige.Menus
                             (x as TierTwoProfession)?.TierOneProfession == tierOneProfession
                             && !prestigedProfessionsForThisSkillAndLevel.Contains(x)
                         );
-                    Game1.player.professions.Add(professionToAdd.Id);
-                    professionToAdd.SpecialHandling?.ApplyEffect();
+                    if (Game1.player.professions.Add(professionToAdd.Id))
+                    {
+                        professionToAdd.SpecialHandling?.ApplyEffect();
+                    }
                     this.exitThisMenu(false);
                     RemoveLevelFromLevelList(this.CurrentSkill.Type.Ordinal, this.CurrentLevel);
                     Game1.activeClickableMenu = new LevelUpMessageDialogWithProfession(this.ExtraTallMessageDialogBounds, $"You levelled your {this.CurrentSkill.Type.Name} skill to level {this.CurrentLevel} and gained a profession! {Environment.NewLine} You may now prestige this skill again!", this.CurrentSkill, professionToAdd);
@@ -247,8 +251,10 @@ namespace SkillPrestige.Menus
                 {
                     Logger.LogInformation("Level Up Menu - All but one level 10 profession found, selecting remaining profession.");
                     var professionToAdd = professionsToChooseFrom.First(x => !prestigedProfessionsForThisSkillAndLevel.Contains(x));
-                    Game1.player.professions.Add(professionToAdd.Id);
-                    professionToAdd.SpecialHandling?.ApplyEffect();
+                    if (Game1.player.professions.Add(professionToAdd.Id))
+                    {
+                        professionToAdd.SpecialHandling?.ApplyEffect();
+                    }
                     this.exitThisMenu(false);
                     RemoveLevelFromLevelList(this.CurrentSkill.Type.Ordinal, this.CurrentLevel);
                     Game1.activeClickableMenu = new LevelUpMessageDialogWithProfession(this.ExtraTallMessageDialogBounds, $"You levelled your {this.CurrentSkill.Type.Name} skill to level {this.CurrentLevel} and gained a profession!  {Environment.NewLine} You may now prestige this skill again!", this.CurrentSkill, professionToAdd);

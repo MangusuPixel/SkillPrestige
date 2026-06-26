@@ -52,9 +52,15 @@ namespace SkillPrestige.Framework.Commands
                         continue;
                     }
                     Logger.LogInformation($"Adding profession {professionId}...");
-                    Game1.player.professions.Add(profession.Id);
-                    profession.SpecialHandling?.ApplyEffect();
-                    ModEntry.LogMonitor.Log($"Profession {professionId}: {profession.DisplayName} added.");
+                    if (Game1.player.professions.Add(profession.Id))
+                    {
+                        profession.SpecialHandling?.ApplyEffect();
+                        ModEntry.LogMonitor.Log($"Profession {professionId}: {profession.DisplayName} added.");
+                    }
+                    else
+                    {
+                        ModEntry.LogMonitor.Log($"Profession {professionId}: {profession.DisplayName} already added.");
+                    }
                 }
             }
         }

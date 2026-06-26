@@ -38,9 +38,15 @@ namespace SkillPrestige.Framework.Commands
                 ModEntry.LogMonitor.Log("profession already added.");
             }
             Logger.LogInformation($"Adding profession {professionArgument}...");
-            Game1.player.professions.Add(profession.Id);
-            profession.SpecialHandling?.ApplyEffect();
-            Logger.LogInformation($"Profession {professionArgument} added.");
+            if (Game1.player.professions.Add(profession.Id))
+            {
+                profession.SpecialHandling?.ApplyEffect();
+                Logger.LogInformation($"Profession {professionArgument} added.");
+            }
+            else
+            {
+                Logger.LogInformation($"Profession {professionArgument} already found.");
+            }
         }
 
         /// <summary>Get the command's help description.</summary>
