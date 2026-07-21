@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SkillPrestige.Framework;
@@ -12,6 +13,7 @@ using SkillPrestige.Framework.Menus.Elements.Buttons;
 using SkillPrestige.Logging;
 using SkillPrestige.Menus;
 using SkillPrestige.Mods;
+using SkillPrestige.Patches;
 using SkillPrestige.Professions;
 using SpaceCore;
 using SpaceCore.Interface;
@@ -60,6 +62,9 @@ namespace SkillPrestige
             ModRegistry = helper.ModRegistry;
             PerSaveOptionsDirectory = Path.Combine(ModPath, "psconfigs/");
             Config = helper.ReadConfig<ModConfig>();
+
+            var harmony = new Harmony(this.ModManifest.UniqueID);
+            SpacecorePatches.Apply(harmony);
 
             // disable mod if All Professions is installed
             if (this.Helper.ModRegistry.IsLoaded("community.AllProfessions"))
