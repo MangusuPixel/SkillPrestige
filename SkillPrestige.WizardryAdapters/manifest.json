@@ -1,0 +1,32 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "mangupix.skillPrestige.wizardry",
+  "Name": "SkillPrestige.WizardryAdapter",
+  "Author": "Mangupix",
+  "Version": "1.0.0",
+  "Description": "Extends Skill Prestige to add support for Wizardry by MoonSlime.",
+  "MinimumApiVersion": "4.5.0",
+  "MinimumGameVersion": "1.6.0",
+  "EntryDll": "SkillPrestige.WizardryAdapter.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "alphablackwolf.skillPrestige"
+    },
+    {
+      "UniqueID": "moonslime.WizardrySkill"
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore"
+    }
+  ],
+  "UpdateKeys": [
+    "Nexus:30635@WizardryAdapter"
+  ]
+}

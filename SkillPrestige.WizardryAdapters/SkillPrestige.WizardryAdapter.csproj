@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Name>SkillPrestige.WizardryAdapter</Name>
+    <Authors>Mangupix</Authors>
+    <Description>Extends Skill Prestige to add support for Wizardry by MoonSlime.</Description>
+    <UniqueId>mangupix.skillPrestige.wizardry</UniqueId>
+    <UpdateKeys>Nexus:30635@WizardryAdapter</UpdateKeys>
+    <MinimumGameVersion>1.6.0</MinimumGameVersion>
+    <MinimumApiVersion>4.5.0</MinimumApiVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SMAPIDependency Include="moonslime.WizardrySkill" MinimumVersion="1.10.0" Required="True"></SMAPIDependency>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\SkillPrestige\SkillPrestige.csproj" MinimumVersion="1.4.3" Private="False" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SpaceCore" HintPath="$(GameModsPath)\SpaceCore\SpaceCore.dll" Private="False" />
+  </ItemGroup>
+</Project>
