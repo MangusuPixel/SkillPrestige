@@ -432,9 +432,9 @@ namespace SkillPrestige
                 {
                     int spaceCoreLevel = (int)Game1.activeClickableMenu.GetInstanceField("currentLevel");
                     if (spaceCoreLevel % 5 != 0) return;
-                    string currentSkillName = Skills.GetSkill((string)Game1.activeClickableMenu.GetInstanceField("currentSkill")).GetName(); //overwrite name with its display name
+                    string currentSkillName = (string)Game1.activeClickableMenu.GetInstanceField("currentSkill");
 
-                    var spaceCoreSkill = Skill.AllSkills.SingleOrDefault(x => x.Type.Name == currentSkillName);
+                    var spaceCoreSkill = Skill.AllSkills.SingleOrDefault(x => x.Type.SpaceCoreSkillId == currentSkillName);
                     if (spaceCoreSkill == null)
                     {
                         Logger.LogCritical($"Unable to load skill {currentSkillName}, skipping level up menu decoration.");
