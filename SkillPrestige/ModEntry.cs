@@ -103,16 +103,10 @@ namespace SkillPrestige
         {
             if (Game1.activeClickableMenu is null
                 && this.SaveIsLoaded
-                && e.Button.IsOneOf(SButton.MouseRight, SButton.ControllerA))
+                && e.Button.IsActionButton())
             {
-                var tileToCheck = e.Button switch
-                {
-                    SButton.MouseRight => Game1.currentCursorTile,
-                    SButton.ControllerA => Game1.player.GetGrabTile(),
-                    _ => Vector2.Zero
-                };
-                if(Game1.currentLocation.objects.ContainsKey(tileToCheck)
-                    && Game1.currentLocation.objects[tileToCheck].name == "Prestige Statue")
+                var tileToCheck = Game1.player.GetGrabTile();
+                if(Game1.currentLocation.objects.TryGetValue(tileToCheck, out var obj) && obj.name == "Prestige Statue")
                     this.OpenSelectionMenu();
             }
             bool isClick = e.Button.IsOneOf(SButton.MouseLeft, SButton.ControllerA);
